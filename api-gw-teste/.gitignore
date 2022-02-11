@@ -1,0 +1,64 @@
+# never commit a terragrunt generated file
+terragrunt-backend.tf
+terragrunt-provider.tf
+terragrunt-debug.tfvars.json
+
+# Created by https://www.gitignore.io/api/terraform
+# Edit at https://www.gitignore.io/?templates=terraform
+
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+
+**/.terragrunt-cache
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# End of https://www.gitignore.io/api/terraform
+
+# IDE files
+.idea/
+
+### Visual Studio Code ###
+**/.vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+### Visual Studio Code Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# Ignore a folder called "file:" created by the extension aws-toolkit-vscode
+
+**/file:/*
